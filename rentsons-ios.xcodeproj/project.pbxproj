@@ -12,9 +12,13 @@
 		9205AD5521BD93F300137005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9205AD5321BD93F300137005 /* LaunchScreen.storyboard */; };
 		9205AD6421BD975F00137005 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205AD6121BD975E00137005 /* Enviroment.swift */; };
 		9205AD6521BD975F00137005 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205AD6221BD975E00137005 /* Configuration.swift */; };
+		B42D992B13F01FD788CD705A /* libPods-rentsons-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 131666200149BEDFBA0E6AED /* libPods-rentsons-ios.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131666200149BEDFBA0E6AED /* libPods-rentsons-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rentsons-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30FA1419D9218DEDB9E57F76 /* Pods-rentsons-ios.debug (staging).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentsons-ios.debug (staging).xcconfig"; path = "Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios.debug (staging).xcconfig"; sourceTree = "<group>"; };
+		3AFFE52B60B846A02136C302 /* Pods-rentsons-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentsons-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios.release.xcconfig"; sourceTree = "<group>"; };
 		9205AD4721BD93F100137005 /* rentsons-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rentsons-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9205AD4A21BD93F200137005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9205AD5121BD93F300137005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		9205AD5621BD93F300137005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9205AD6121BD975E00137005 /* Enviroment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		9205AD6221BD975E00137005 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CC6D6C11E70FEDE6482D30CE /* Pods-rentsons-ios.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentsons-ios.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios.debug (production).xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42D992B13F01FD788CD705A /* libPods-rentsons-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				9205AD4921BD93F100137005 /* rentsons-ios */,
 				9205AD4821BD93F100137005 /* Products */,
+				D90771B9777418A3AD1AC29C /* Pods */,
+				A0D01DA26C0225EC92BD5A6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +80,24 @@
 			path = "Database Setup";
 			sourceTree = "<group>";
 		};
+		A0D01DA26C0225EC92BD5A6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				131666200149BEDFBA0E6AED /* libPods-rentsons-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D90771B9777418A3AD1AC29C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30FA1419D9218DEDB9E57F76 /* Pods-rentsons-ios.debug (staging).xcconfig */,
+				CC6D6C11E70FEDE6482D30CE /* Pods-rentsons-ios.debug (production).xcconfig */,
+				3AFFE52B60B846A02136C302 /* Pods-rentsons-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9205AD5921BD93F300137005 /* Build configuration list for PBXNativeTarget "rentsons-ios" */;
 			buildPhases = (
+				E374603A2434876028C84668 /* [CP] Check Pods Manifest.lock */,
 				9205AD4321BD93F100137005 /* Sources */,
 				9205AD4421BD93F100137005 /* Frameworks */,
 				9205AD4521BD93F100137005 /* Resources */,
+				05739E52F8677386F5166A6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +164,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05739E52F8677386F5166A6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Parse/ParseUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Parse.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ParseUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E374603A2434876028C84668 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rentsons-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9205AD4321BD93F100137005 /* Sources */ = {
@@ -280,6 +357,7 @@
 		};
 		9205AD5A21BD93F300137005 /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FA1419D9218DEDB9E57F76 /* Pods-rentsons-ios.debug (staging).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +376,7 @@
 		};
 		9205AD5B21BD93F300137005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AFFE52B60B846A02136C302 /* Pods-rentsons-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +456,7 @@
 		};
 		9205AD5D21BD95E100137005 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6D6C11E70FEDE6482D30CE /* Pods-rentsons-ios.debug (production).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

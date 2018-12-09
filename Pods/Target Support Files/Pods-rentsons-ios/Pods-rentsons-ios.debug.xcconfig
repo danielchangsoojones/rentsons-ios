@@ -1,0 +1,12 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Bolts" "${PODS_ROOT}/Headers/Public/Former" "${PODS_ROOT}/Headers/Public/Parse"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Bolts" "${PODS_CONFIGURATION_BUILD_DIR}/Former" "${PODS_CONFIGURATION_BUILD_DIR}/Parse" "${PODS_CONFIGURATION_BUILD_DIR}/SCLAlertView" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Former/Former.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SCLAlertView/SCLAlertView.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.modulemap" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Bolts" -isystem "${PODS_ROOT}/Headers/Public/Former" -isystem "${PODS_ROOT}/Headers/Public/Parse"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Bolts" -l"Former" -l"Parse" -l"SCLAlertView" -l"SnapKit" -l"sqlite3" -l"z" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreGraphics" -framework "CoreLocation" -framework "Foundation" -framework "QuartzCore" -framework "Security" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "Accounts" -weak_framework "Social"
+OTHER_SWIFT_FLAGS = $(inherited) -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Former/Former.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SCLAlertView/SCLAlertView.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.modulemap" $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Former" "${PODS_CONFIGURATION_BUILD_DIR}/SCLAlertView" "${PODS_CONFIGURATION_BUILD_DIR}/SnapKit"

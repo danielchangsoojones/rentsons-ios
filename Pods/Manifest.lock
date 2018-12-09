@@ -1,0 +1,37 @@
+PODS:
+  - Bolts/Tasks (1.9.0)
+  - Former (1.7.0)
+  - Parse (1.17.1):
+    - Parse/Core (= 1.17.1)
+  - Parse/Core (1.17.1):
+    - Bolts/Tasks (~> 1.9)
+  - Parse/UI (1.17.1):
+    - Parse/Core
+  - SCLAlertView (0.8)
+  - SnapKit (4.0.1)
+
+DEPENDENCIES:
+  - Former (~> 1.7.0)
+  - Parse (~> 1.17.0-alpha.3)
+  - Parse/UI
+  - SCLAlertView
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bolts
+    - Former
+    - Parse
+    - SCLAlertView
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Former: f78c0c28b84aadc4da3bf29e97220c8db188048d
+  Parse: d3edaf8c7c722cb33cb83ba7821d015ae32d362d
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+
+PODFILE CHECKSUM: 31165d7659e4c813d545a97c5b5cfc75d26c14d6
+
+COCOAPODS: 1.5.3
