@@ -15,15 +15,15 @@ enum Environment: String {
     //TODO: these need to change to my heroku servers
     var applicationId: String {
         switch self {
-        case .Development: return "btownRidesDevelopment43598903845902UFSF"
-        case .Production: return "btownRidesProduction3495803840530"
+        case .Development: return "rentsonsDevelopment4850385FHDJKGFKT"
+        case .Production: return "rentonsProduction58604839FJHDKGLDKJ"
         }
     }
     
     var server: String {
         switch self {
-        case .Development: return "https://btown-rides-development.herokuapp.com/parse"
-        case .Production: return "https://btown-rides-production.herokuapp.com/parse"
+        case .Development: return "https://rentsons-development.herokuapp.com/parse"
+        case .Production: return "https://rentsons-production.herokuapp.com/parse"
         }
     }
 }
