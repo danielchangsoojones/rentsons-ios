@@ -12,7 +12,6 @@ enum Environment: String {
     case Development = "development"
     case Production = "production"
     
-    //TODO: these need to change to my heroku servers
     var applicationId: String {
         switch self {
         case .Development: return "rentsonsDevelopment4850385FHDJKGFKT"
