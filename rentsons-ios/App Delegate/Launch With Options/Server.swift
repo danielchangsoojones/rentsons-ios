@@ -11,7 +11,7 @@ import Parse
 import Stripe
 
 class Server {
-    func configure(from launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+    func configure(from launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         setParseConfiguration()
         registerSubclasses()
         configureStripe()
@@ -29,6 +29,7 @@ class Server {
     private func registerSubclasses() {
         User.registerSubclass()
         InstallationParse.registerSubclass()
+        LocationParse.registerSubclass()
     }
     
     private func configureStripe() {

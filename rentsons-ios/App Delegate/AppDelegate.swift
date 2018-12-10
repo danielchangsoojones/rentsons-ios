@@ -16,14 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        Server().configure(from: launchOptions)
         application.registerForRemoteNotifications()
+        Server().configure(from: launchOptions)
         setStartingVC()
         
-        //TODO: I can remove this eventually, this is just to get the push notifications testing working
-        let types: UIUserNotificationType = [.Alert, .Badge, .Sound]
-        let settings = UIUserNotificationSettings(forTypes: types, categories: nil)
-        application.registerUserNotificationSettings(settings)
+        //TODO: I can remove this eventually to a better place to ask for notifications, this is just to get the push notifications testing working
+        PushNotification.getPermission()
         
         return true
     }

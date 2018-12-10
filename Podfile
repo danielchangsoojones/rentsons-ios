@@ -2,6 +2,8 @@
 platform :ios, '9.0'
 
 target 'rentsons-ios' do
+    use_frameworks!
+    
     pod 'SnapKit', '~> 4.0.0'
     pod 'Parse', '~> 1.17.0-alpha.3'
     pod 'Parse/UI'
@@ -17,4 +19,5 @@ target 'rentsons-ios' do
     pod 'SwiftyJSON'
     pod 'Reusable'
     pod 'Stripe'
+    pod 'GoogleMaps'
 end

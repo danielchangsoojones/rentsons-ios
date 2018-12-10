@@ -1,4 +1,4 @@
-module Pods_rentsons_ios {
+framework module Pods_rentsons_ios {
   umbrella header "Pods-rentsons-ios-umbrella.h"
 
   export *

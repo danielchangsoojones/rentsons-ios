@@ -22,13 +22,7 @@ class User: PFUser {
     @NSManaged var defaultPaymentMethodStripeID: String
     @NSManaged var isDeleted: Bool
     @NSManaged var arePushNotificationsEnabled: Bool
-
-    var age : Int? {
-        if let birthDate = birthDate {
-            return calculateAge(birthday: birthDate)
-        }
-        return nil
-    }
+    
     var theFirstName: String {
         get {
             return firstName ?? ""

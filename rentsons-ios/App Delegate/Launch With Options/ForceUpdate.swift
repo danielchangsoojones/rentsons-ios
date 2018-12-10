@@ -12,9 +12,7 @@ import Siren
 // Siren allows 1 day leeway for a new version because it can sometimes take ~24 hours to have the version aggregate through all of the app store correctly. So users will be force updated in 1 day after the release, not immediately. More on this issue here: https://github.com/ArtSabintsev/Siren#words-of-caution
 class ForceUpdate {
     init() {
-        ForceUpdateParse.check {
-            self.configureSiren()
-        }
+        self.configureSiren()
     }
     
     private func configureSiren() {
@@ -33,9 +31,5 @@ class ForceUpdate {
         // Replace .immediately with .daily or .weekly to specify a maximum daily or weekly frequency for version checks.
         // DO NOT CALL THIS METHOD IN didFinishLaunchingWithOptions IF YOU ALSO PLAN TO CALL IT IN applicationDidBecomeActive.
         siren.checkVersion(checkType: .immediately)
-    }
-    
-    func checkIfForceUpdating() {
-        
     }
 }

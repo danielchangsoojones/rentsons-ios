@@ -92,22 +92,13 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug (Staging)" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Parse/ParseUI.bundle"
-  install_resource "${PODS_ROOT}/Siren/Sources/Siren.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle"
+  install_resource "${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle"
 fi
 if [[ "$CONFIGURATION" == "Debug (Production)" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Parse/ParseUI.bundle"
-  install_resource "${PODS_ROOT}/Siren/Sources/Siren.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle"
+  install_resource "${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Parse/ParseUI.bundle"
-  install_resource "${PODS_ROOT}/Siren/Sources/Siren.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Stripe/Stripe.bundle"
+  install_resource "${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
