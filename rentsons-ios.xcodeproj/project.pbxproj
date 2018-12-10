@@ -12,6 +12,10 @@
 		9205AD5521BD93F300137005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9205AD5321BD93F300137005 /* LaunchScreen.storyboard */; };
 		9205AD6421BD975F00137005 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205AD6121BD975E00137005 /* Enviroment.swift */; };
 		9205AD6521BD975F00137005 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205AD6221BD975E00137005 /* Configuration.swift */; };
+		9295F79221BE023E00F716F5 /* InstallationParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F79121BE023E00F716F5 /* InstallationParse.swift */; };
+		9295F79821BE02D200F716F5 /* ForceUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F79521BE02D200F716F5 /* ForceUpdate.swift */; };
+		9295F79A21BE02D200F716F5 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F79721BE02D200F716F5 /* Server.swift */; };
+		9295F79C21BE031800F716F5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F79B21BE031700F716F5 /* User.swift */; };
 		B42D992B13F01FD788CD705A /* libPods-rentsons-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 131666200149BEDFBA0E6AED /* libPods-rentsons-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,10 @@
 		9205AD5621BD93F300137005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9205AD6121BD975E00137005 /* Enviroment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		9205AD6221BD975E00137005 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		9295F79121BE023E00F716F5 /* InstallationParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallationParse.swift; sourceTree = "<group>"; };
+		9295F79521BE02D200F716F5 /* ForceUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceUpdate.swift; sourceTree = "<group>"; };
+		9295F79721BE02D200F716F5 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		9295F79B21BE031700F716F5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CC6D6C11E70FEDE6482D30CE /* Pods-rentsons-ios.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentsons-ios.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios.debug (production).xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,10 +70,11 @@
 		9205AD4921BD93F100137005 /* rentsons-ios */ = {
 			isa = PBXGroup;
 			children = (
-				9205AD4A21BD93F200137005 /* AppDelegate.swift */,
 				9205AD5121BD93F300137005 /* Assets.xcassets */,
 				9205AD5321BD93F300137005 /* LaunchScreen.storyboard */,
 				9205AD5621BD93F300137005 /* Info.plist */,
+				9295F79321BE02AA00F716F5 /* App Delegate */,
+				9295F78F21BE016700F716F5 /* Models */,
 				9205AD5E21BD975E00137005 /* Database Setup */,
 			);
 			path = "rentsons-ios";
@@ -78,6 +87,41 @@
 				9205AD6221BD975E00137005 /* Configuration.swift */,
 			);
 			path = "Database Setup";
+			sourceTree = "<group>";
+		};
+		9295F78F21BE016700F716F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9295F79021BE021E00F716F5 /* Database */,
+				9295F79B21BE031700F716F5 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9295F79021BE021E00F716F5 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				9295F79121BE023E00F716F5 /* InstallationParse.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		9295F79321BE02AA00F716F5 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9295F79421BE02D200F716F5 /* Launch With Options */,
+				9205AD4A21BD93F200137005 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		9295F79421BE02D200F716F5 /* Launch With Options */ = {
+			isa = PBXGroup;
+			children = (
+				9295F79521BE02D200F716F5 /* ForceUpdate.swift */,
+				9295F79721BE02D200F716F5 /* Server.swift */,
+			);
+			path = "Launch With Options";
 			sourceTree = "<group>";
 		};
 		A0D01DA26C0225EC92BD5A6B /* Frameworks */ = {
@@ -223,9 +267,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9295F79A21BE02D200F716F5 /* Server.swift in Sources */,
 				9205AD6521BD975F00137005 /* Configuration.swift in Sources */,
+				9295F79821BE02D200F716F5 /* ForceUpdate.swift in Sources */,
 				9205AD6421BD975F00137005 /* Enviroment.swift in Sources */,
 				9205AD4B21BD93F200137005 /* AppDelegate.swift in Sources */,
+				9295F79221BE023E00F716F5 /* InstallationParse.swift in Sources */,
+				9295F79C21BE031800F716F5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +412,7 @@
 			baseConfigurationReference = 30FA1419D9218DEDB9E57F76 /* Pods-rentsons-ios.debug (staging).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5R935UZ88L;
 				INFOPLIST_FILE = "rentsons-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -373,6 +421,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dcj.Chong500Productions.rentsons-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = rentsonsDevelopmentProvisioningProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -383,8 +432,8 @@
 			baseConfigurationReference = 3AFFE52B60B846A02136C302 /* Pods-rentsons-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R935UZ88L;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "rentsons-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,6 +441,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dcj.Chong500Productions.rentsons-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,7 +513,7 @@
 			baseConfigurationReference = CC6D6C11E70FEDE6482D30CE /* Pods-rentsons-ios.debug (production).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5R935UZ88L;
 				INFOPLIST_FILE = "rentsons-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,6 +522,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dcj.Chong500Productions.rentsons-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = rentsonsDevelopmentProvisioningProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
