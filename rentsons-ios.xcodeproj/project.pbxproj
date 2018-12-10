@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86A1064C02E735E9D74180B1 /* Pods_rentsons_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41AE869DAF5E75BDD423490 /* Pods_rentsons_ios.framework */; };
 		9205AD4B21BD93F200137005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205AD4A21BD93F200137005 /* AppDelegate.swift */; };
 		9205AD5221BD93F300137005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9205AD5121BD93F300137005 /* Assets.xcassets */; };
 		9205AD5521BD93F300137005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9205AD5321BD93F300137005 /* LaunchScreen.storyboard */; };
 		9205AD6421BD975F00137005 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205AD6121BD975E00137005 /* Enviroment.swift */; };
 		9205AD6521BD975F00137005 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9205AD6221BD975E00137005 /* Configuration.swift */; };
+		920D3F0D21BE12890006ECF1 /* EZSwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D3F0C21BE12890006ECF1 /* EZSwiftExtensions.swift */; };
+		920D3F0F21BE13AD0006ECF1 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D3F0E21BE13AD0006ECF1 /* Phone.swift */; };
+		920D3F1221BE13EE0006ECF1 /* CustomLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D3F1121BE13ED0006ECF1 /* CustomLocation.swift */; };
+		920D3F1421BE14470006ECF1 /* LocationParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D3F1321BE14470006ECF1 /* LocationParse.swift */; };
+		920D3F1621BE14650006ECF1 /* SuperParseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D3F1521BE14650006ECF1 /* SuperParseObject.swift */; };
+		9295F79221BE023E00F716F5 /* InstallationParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F79121BE023E00F716F5 /* InstallationParse.swift */; };
+		9295F79821BE02D200F716F5 /* ForceUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F79521BE02D200F716F5 /* ForceUpdate.swift */; };
+		9295F79A21BE02D200F716F5 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F79721BE02D200F716F5 /* Server.swift */; };
+		9295F79C21BE031800F716F5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F79B21BE031700F716F5 /* User.swift */; };
+		9295F7A021BE0A2B00F716F5 /* PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F79F21BE0A2B00F716F5 /* PushNotification.swift */; };
+		9295F7A421BE0C8F00F716F5 /* StripeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F7A321BE0C8F00F716F5 /* StripeManager.swift */; };
+		9295F7A721BE0E7900F716F5 /* BannerLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F7A621BE0E7800F716F5 /* BannerLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30FA1419D9218DEDB9E57F76 /* Pods-rentsons-ios.debug (staging).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentsons-ios.debug (staging).xcconfig"; path = "Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios.debug (staging).xcconfig"; sourceTree = "<group>"; };
+		3AFFE52B60B846A02136C302 /* Pods-rentsons-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentsons-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios.release.xcconfig"; sourceTree = "<group>"; };
 		9205AD4721BD93F100137005 /* rentsons-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rentsons-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9205AD4A21BD93F200137005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9205AD5121BD93F300137005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -22,6 +37,21 @@
 		9205AD5621BD93F300137005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9205AD6121BD975E00137005 /* Enviroment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		9205AD6221BD975E00137005 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		920D3F0C21BE12890006ECF1 /* EZSwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZSwiftExtensions.swift; sourceTree = "<group>"; };
+		920D3F0E21BE13AD0006ECF1 /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		920D3F1121BE13ED0006ECF1 /* CustomLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLocation.swift; sourceTree = "<group>"; };
+		920D3F1321BE14470006ECF1 /* LocationParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationParse.swift; sourceTree = "<group>"; };
+		920D3F1521BE14650006ECF1 /* SuperParseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperParseObject.swift; sourceTree = "<group>"; };
+		920D3F1721BE18C00006ECF1 /* rentsons-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rentsons-ios.entitlements"; sourceTree = "<group>"; };
+		9295F79121BE023E00F716F5 /* InstallationParse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallationParse.swift; sourceTree = "<group>"; };
+		9295F79521BE02D200F716F5 /* ForceUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceUpdate.swift; sourceTree = "<group>"; };
+		9295F79721BE02D200F716F5 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		9295F79B21BE031700F716F5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9295F79F21BE0A2B00F716F5 /* PushNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotification.swift; sourceTree = "<group>"; };
+		9295F7A321BE0C8F00F716F5 /* StripeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeManager.swift; sourceTree = "<group>"; };
+		9295F7A621BE0E7800F716F5 /* BannerLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerLoader.swift; sourceTree = "<group>"; };
+		B41AE869DAF5E75BDD423490 /* Pods_rentsons_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rentsons_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6D6C11E70FEDE6482D30CE /* Pods-rentsons-ios.debug (production).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rentsons-ios.debug (production).xcconfig"; path = "Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios.debug (production).xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A1064C02E735E9D74180B1 /* Pods_rentsons_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +71,8 @@
 			children = (
 				9205AD4921BD93F100137005 /* rentsons-ios */,
 				9205AD4821BD93F100137005 /* Products */,
+				D90771B9777418A3AD1AC29C /* Pods */,
+				A0D01DA26C0225EC92BD5A6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,10 +87,15 @@
 		9205AD4921BD93F100137005 /* rentsons-ios */ = {
 			isa = PBXGroup;
 			children = (
-				9205AD4A21BD93F200137005 /* AppDelegate.swift */,
+				920D3F1721BE18C00006ECF1 /* rentsons-ios.entitlements */,
 				9205AD5121BD93F300137005 /* Assets.xcassets */,
 				9205AD5321BD93F300137005 /* LaunchScreen.storyboard */,
 				9205AD5621BD93F300137005 /* Info.plist */,
+				9295F79321BE02AA00F716F5 /* App Delegate */,
+				9295F7A121BE0C5300F716F5 /* Payment */,
+				920D3F1021BE13E10006ECF1 /* Location */,
+				9295F79D21BE0A1200F716F5 /* Helpers */,
+				9295F78F21BE016700F716F5 /* Models */,
 				9205AD5E21BD975E00137005 /* Database Setup */,
 			);
 			path = "rentsons-ios";
@@ -72,6 +110,120 @@
 			path = "Database Setup";
 			sourceTree = "<group>";
 		};
+		920D3F0B21BE126D0006ECF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				920D3F0C21BE12890006ECF1 /* EZSwiftExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		920D3F1021BE13E10006ECF1 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				920D3F1121BE13ED0006ECF1 /* CustomLocation.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		9295F78F21BE016700F716F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9295F79021BE021E00F716F5 /* Database */,
+				9295F79B21BE031700F716F5 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9295F79021BE021E00F716F5 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				920D3F1521BE14650006ECF1 /* SuperParseObject.swift */,
+				920D3F1321BE14470006ECF1 /* LocationParse.swift */,
+				9295F79121BE023E00F716F5 /* InstallationParse.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		9295F79321BE02AA00F716F5 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9295F79421BE02D200F716F5 /* Launch With Options */,
+				9205AD4A21BD93F200137005 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		9295F79421BE02D200F716F5 /* Launch With Options */ = {
+			isa = PBXGroup;
+			children = (
+				9295F79521BE02D200F716F5 /* ForceUpdate.swift */,
+				9295F79721BE02D200F716F5 /* Server.swift */,
+			);
+			path = "Launch With Options";
+			sourceTree = "<group>";
+		};
+		9295F79D21BE0A1200F716F5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				920D3F0B21BE126D0006ECF1 /* Extensions */,
+				9295F7A521BE0E1700F716F5 /* Alerts */,
+				9295F79E21BE0A2000F716F5 /* Notifications */,
+				920D3F0E21BE13AD0006ECF1 /* Phone.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9295F79E21BE0A2000F716F5 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				9295F79F21BE0A2B00F716F5 /* PushNotification.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		9295F7A121BE0C5300F716F5 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				9295F7A221BE0C7900F716F5 /* Stripe */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		9295F7A221BE0C7900F716F5 /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+				9295F7A321BE0C8F00F716F5 /* StripeManager.swift */,
+			);
+			path = Stripe;
+			sourceTree = "<group>";
+		};
+		9295F7A521BE0E1700F716F5 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				9295F7A621BE0E7800F716F5 /* BannerLoader.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		A0D01DA26C0225EC92BD5A6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B41AE869DAF5E75BDD423490 /* Pods_rentsons_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D90771B9777418A3AD1AC29C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30FA1419D9218DEDB9E57F76 /* Pods-rentsons-ios.debug (staging).xcconfig */,
+				CC6D6C11E70FEDE6482D30CE /* Pods-rentsons-ios.debug (production).xcconfig */,
+				3AFFE52B60B846A02136C302 /* Pods-rentsons-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +231,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9205AD5921BD93F300137005 /* Build configuration list for PBXNativeTarget "rentsons-ios" */;
 			buildPhases = (
+				E374603A2434876028C84668 /* [CP] Check Pods Manifest.lock */,
 				9205AD4321BD93F100137005 /* Sources */,
 				9205AD4421BD93F100137005 /* Frameworks */,
 				9205AD4521BD93F100137005 /* Resources */,
+				7C341C21EE49D353B1A4451D /* [CP] Embed Pods Frameworks */,
+				650E65769CB36815915B4652 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -104,6 +259,11 @@
 				TargetAttributes = {
 					9205AD4621BD93F100137005 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,14 +297,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		650E65769CB36815915B4652 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C341C21EE49D353B1A4451D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Former/Former.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/Siren/Siren.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Former.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siren.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rentsons-ios/Pods-rentsons-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E374603A2434876028C84668 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rentsons-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9205AD4321BD93F100137005 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9295F7A721BE0E7900F716F5 /* BannerLoader.swift in Sources */,
+				9295F7A021BE0A2B00F716F5 /* PushNotification.swift in Sources */,
+				920D3F0D21BE12890006ECF1 /* EZSwiftExtensions.swift in Sources */,
+				920D3F1621BE14650006ECF1 /* SuperParseObject.swift in Sources */,
+				9295F79A21BE02D200F716F5 /* Server.swift in Sources */,
+				920D3F0F21BE13AD0006ECF1 /* Phone.swift in Sources */,
 				9205AD6521BD975F00137005 /* Configuration.swift in Sources */,
+				9295F79821BE02D200F716F5 /* ForceUpdate.swift in Sources */,
+				920D3F1221BE13EE0006ECF1 /* CustomLocation.swift in Sources */,
+				920D3F1421BE14470006ECF1 /* LocationParse.swift in Sources */,
 				9205AD6421BD975F00137005 /* Enviroment.swift in Sources */,
 				9205AD4B21BD93F200137005 /* AppDelegate.swift in Sources */,
+				9295F79221BE023E00F716F5 /* InstallationParse.swift in Sources */,
+				9295F79C21BE031800F716F5 /* User.swift in Sources */,
+				9295F7A421BE0C8F00F716F5 /* StripeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +541,11 @@
 		};
 		9205AD5A21BD93F300137005 /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FA1419D9218DEDB9E57F76 /* Pods-rentsons-ios.debug (staging).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "rentsons-ios/rentsons-ios.entitlements";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5R935UZ88L;
 				INFOPLIST_FILE = "rentsons-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -291,6 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dcj.Chong500Productions.rentsons-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = rentsonsDevelopmentProvisioningProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,9 +562,12 @@
 		};
 		9205AD5B21BD93F300137005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AFFE52B60B846A02136C302 /* Pods-rentsons-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "rentsons-ios/rentsons-ios.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5R935UZ88L;
 				INFOPLIST_FILE = "rentsons-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dcj.Chong500Productions.rentsons-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = rentsonsDistributionProvisioningProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -377,9 +645,11 @@
 		};
 		9205AD5D21BD95E100137005 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6D6C11E70FEDE6482D30CE /* Pods-rentsons-ios.debug (production).xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "rentsons-ios/rentsons-ios.entitlements";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5R935UZ88L;
 				INFOPLIST_FILE = "rentsons-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,6 +658,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dcj.Chong500Productions.rentsons-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = rentsonsDevelopmentProvisioningProfile;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

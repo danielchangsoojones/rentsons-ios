@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (4.8.0)
+  - Bolts/Tasks (1.9.0)
+  - BRYXBanner (0.8.3)
+  - Former (1.7.0)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - Parse (1.17.1):
+    - Parse/Core (= 1.17.1)
+  - Parse/Core (1.17.1):
+    - Bolts/Tasks (~> 1.9)
+  - Parse/UI (1.17.1):
+    - Parse/Core
+  - Reusable (4.0.5):
+    - Reusable/Storyboard (= 4.0.5)
+    - Reusable/View (= 4.0.5)
+  - Reusable/Storyboard (4.0.5)
+  - Reusable/View (4.0.5)
+  - SCLAlertView (0.8)
+  - Siren (3.9.1)
+  - SnapKit (4.0.1)
+  - Stripe (14.0.0)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - BRYXBanner (~> 0.8.3)
+  - Former (~> 1.7.0)
+  - GoogleMaps
+  - Parse (~> 1.17.0-alpha.3)
+  - Parse/UI
+  - Reusable
+  - SCLAlertView
+  - Siren
+  - SnapKit (~> 4.0.0)
+  - Stripe
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Bolts
+    - BRYXBanner
+    - Former
+    - GoogleMaps
+    - Parse
+    - Reusable
+    - SCLAlertView
+    - Siren
+    - SnapKit
+    - Stripe
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  BRYXBanner: 8cf1b119792e1cee8d7ba107297ef89f7409bc53
+  Former: f78c0c28b84aadc4da3bf29e97220c8db188048d
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  Parse: d3edaf8c7c722cb33cb83ba7821d015ae32d362d
+  Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  Siren: 22b68056e52c5b6707bcbfac09d2d16874ee098a
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Stripe: db29ad197c74aca6fb981e4e8355cf7ebd0fca5a
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 3289113d62bc49a2dd4355400b314443e08eaa67
+
+COCOAPODS: 1.5.3
