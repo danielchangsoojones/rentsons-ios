@@ -1,0 +1,60 @@
+default_platform(:ios)
+
+platform :ios do
+
+desc "Deploys to testflight"
+lane :beta do
+    #will throw errors if there are uncommited changes
+    ensure_git_status_clean
+
+    increment_build_number({
+        build_number: latest_testflight_build_number + 1
+    })
+
+    #archives and builds the application
+    gym
+
+    upload_to_testflight(skip_waiting_for_build_processing: false)
+
+    #files where the build number is incremented, so we should to commit them
+    git_commit(path: ["./rentsons-ios/Info.plist", "./rentsons-ios.xcodeproj/project.pbxproj"], message: 'Fastlane: incremented build number')
+
+    #this pushes to the remote origin branch. So develop would push to the develop branch in Github.
+    push_to_git_remote
+end
+
+lane :release do
+    changelog = prompt(text: "Changelog: ")
+
+    #will throw errors if there are uncommited changes
+    ensure_git_status_clean
+
+    increment_version_number(
+        bump_type: "minor" # Automatically increment minor version number
+    )
+
+    #archives and builds the application
+    gym
+
+    #forcing to true, makes it so that you don't have to verify the html change every time.
+    upload_to_app_store(
+        submit_for_review: true,
+        force: true,
+        automatic_release: true,
+        submission_information: {
+            add_id_info_serves_ads: false
+        },
+        release_notes: {
+            'default' => changelog,
+            'en-US' => changelog
+        }
+    )
+
+    #files where the build number is incremented, so we should to commit them
+    git_commit(path: ["./rentsons-ios/Info.plist"], message: 'Fastlane: pushed to app store and incremented build number')
+
+    #this pushes to the remote origin branch. So develop would push to the develop branch in Github.
+    push_to_git_remote
+end
+
+end
